@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   
   // Enable static export for Hostinger deployment
-  output: 'export',
+
   trailingSlash: true,
   
   // Image optimization settings for static export
