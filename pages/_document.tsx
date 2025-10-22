@@ -39,8 +39,7 @@ export default function Document() {
         <meta charSet="utf-8" />
         
         {/* Google Search Console Verification */}
-        {/* REPLACE "YOUR_VERIFICATION_CODE_HERE" with your actual code from Google Search Console */}
-        <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE" />
+        <meta name="google-site-verification" content="googlgoogle39903354eaf596f0.html" />
       </Head>
       <body suppressHydrationWarning={true} className="font-sans">
         <Main />
