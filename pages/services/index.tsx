@@ -153,7 +153,7 @@ function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 bg-blue-100/30 flex items-center justify-center z-50 px-4">
+    <div className="fixed inset-0 bg-blue-100/30 flex items-center justify-center z-40 px-4 pt-20">
       <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         {/* Modal Header */}
         <div className="bg-gradient-to-r from-sky-300 to-blue-400 text-black p-6 rounded-t-2xl">
@@ -689,10 +689,27 @@ export default function ServicesPage() {
           box-shadow: 0 8px 25px rgba(135, 206, 235, 0.3);
         }
         
+        /* Services Responsive Grid */
+        .services-responsive-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2rem;
+          max-width: 1000px;
+          margin: 0 auto;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
+          .services-responsive-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1.5rem !important;
+            padding: 0 1rem !important;
+          }
+          
           .service-card-custom {
             padding: 1.5rem;
+            margin: 0 auto;
+            max-width: 400px;
           }
           
           .cta-section {
@@ -711,6 +728,33 @@ export default function ServicesPage() {
           .cta-btn-secondary {
             width: 100%;
             max-width: 300px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .services-responsive-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1rem !important;
+            padding: 0 0.5rem !important;
+          }
+          
+          .service-card-custom {
+            padding: 1.25rem !important;
+            max-width: 100% !important;
+          }
+          
+          .service-icon {
+            width: 60px !important;
+            height: 60px !important;
+            font-size: 2rem !important;
+          }
+          
+          .service-title {
+            font-size: 1.25rem !important;
+          }
+          
+          .service-description {
+            font-size: 0.9rem !important;
           }
         }
       `}</style>
@@ -747,8 +791,8 @@ export default function ServicesPage() {
       {/* Services Grid */}
       <section style={{ padding: '4rem 0' }}>
         <div className="container">
-          <div className="service-grid mb-16">
-            {services.map((service) => (
+          <div className="services-responsive-grid">
+            {services.slice(0, 2).map((service) => (
               <div key={service.id} className="service-card-custom">
                 {/* Service Icon */}
                 <div className="service-icon">

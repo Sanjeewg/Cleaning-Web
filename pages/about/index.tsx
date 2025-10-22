@@ -125,7 +125,7 @@ const companyStats = [
     description: 'Satisfied clients across the city'
   },
   {
-    number: 3000,
+    number: 2000,
     suffix: '+',
     label: 'Cleaning Jobs',
     description: 'Successfully completed projects'
