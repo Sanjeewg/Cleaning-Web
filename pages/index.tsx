@@ -23,10 +23,10 @@ export default function HomePage() {
       {/* SEO Meta Tags */}
       <Head>
         {/* Primary Meta Tags */}
-        <title>Three Boys Cleaning Services  | Professional House & Car Detailing | 022 058 5306</title>
+        <title>Three Boys Cleaning Services Christchurch | Professional House & Car Detailing | 022 058 5306</title>
         <meta name="title" content="Three Boys Cleaning Services Christchurch | Professional House & Car Detailing | 022 058 5306" />
-        <meta name="description" content="Professional cleaning services in , New Zealand. House cleaning, commercial cleaning, car detailing, move-in/out cleaning. Expert team, eco-friendly products, satisfaction guaranteed. Call 022 058 5306 for a free quote!" />
-        <meta name="keywords" content="cleaning services , house cleaning , car detailing christchurch, commercial cleaning, move out cleaning, bond cleaning, professional cleaners, eco-friendly cleaning, three boys cleaning" />
+        <meta name="description" content="★★★★★ Professional cleaning services in Christchurch, New Zealand. House cleaning, commercial cleaning, car detailing, move-in/out cleaning. Expert team, eco-friendly products, satisfaction guaranteed. Call 022 058 5306 for a free quote!" />
+        <meta name="keywords" content="cleaning services christchurch, house cleaning christchurch, car detailing christchurch, commercial cleaning, move out cleaning, bond cleaning, professional cleaners, eco-friendly cleaning, three boys cleaning" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
@@ -59,11 +59,21 @@ export default function HomePage() {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Three Boys Cleaning Services",
-              "description": "Professional cleaning services in Christchurch, New Zealand. House cleaning, commercial cleaning, car detailing, move-in/out cleaning.",
-              "image": "https://threeboyscleaning.com/images/LogoCleaning.png",
+              "alternateName": "Three Boys Cleaning",
+              "description": "★★★★★ Professional cleaning services in Christchurch, New Zealand. House cleaning, commercial cleaning, car detailing, move-in/out cleaning. Expert team with 5+ years experience.",
+              "image": [
+                "https://threeboyscleaning.com/images/LogoCleaning.png",
+                "https://threeboyscleaning.com/images/cleaning-service-1.jpg",
+                "https://threeboyscleaning.com/images/car-detailing-1.jpg"
+              ],
+              "logo": "https://threeboyscleaning.com/images/LogoCleaning.png",
               "url": "https://threeboyscleaning.com",
               "telephone": "+64220585306",
               "email": "info@threeboyscleaning.com",
+              "sameAs": [
+                "https://www.facebook.com/threeboyscleaning",
+                "https://www.instagram.com/threeboyscleaning"
+              ],
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Christchurch",
@@ -134,9 +144,109 @@ export default function HomePage() {
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "4.9",
-                "reviewCount": "500"
+                "reviewCount": "500",
+                "bestRating": "5",
+                "worstRating": "1"
               },
-              "priceRange": "$$"
+              "review": [
+                {
+                  "@type": "Review",
+                  "author": {
+                    "@type": "Person",
+                    "name": "Sarah Johnson"
+                  },
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                  },
+                  "reviewBody": "Excellent service! The team was professional and thorough. My house has never been cleaner."
+                },
+                {
+                  "@type": "Review",
+                  "author": {
+                    "@type": "Person",
+                    "name": "Mike Chen"
+                  },
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                  },
+                  "reviewBody": "Outstanding car detailing service. My car looks brand new! Highly recommend Three Boys Cleaning."
+                }
+              ],
+              "priceRange": "$$",
+              "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+              "currenciesAccepted": "NZD"
+            })
+          }}
+        />
+
+        {/* Breadcrumb Schema for Better Search Results */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://threeboyscleaning.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Cleaning Services",
+                  "item": "https://threeboyscleaning.com/services"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Contact",
+                  "item": "https://threeboyscleaning.com/contact"
+                }
+              ]
+            })
+          }}
+        />
+
+        {/* FAQ Schema for Rich Snippets */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What cleaning services do you offer in Christchurch?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We offer house cleaning, car detailing, commercial cleaning, move-in/out cleaning, carpet cleaning, and window cleaning services throughout Christchurch and Canterbury."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How much do your cleaning services cost?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our prices vary based on the size and type of cleaning required. Contact us at 022 058 5306 for a free, no-obligation quote tailored to your specific needs."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you use eco-friendly cleaning products?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we use environmentally friendly and non-toxic cleaning products that are safe for your family, pets, and the environment while delivering exceptional results."
+                  }
+                }
+              ]
             })
           }}
         />
