@@ -54,4 +54,10 @@
     <priority>0.30</priority>
     <changefreq>yearly</changefreq>
   </url>
+  <url>
+    <loc>https://threeboyscleaning.com/blog-post-christchurch-cleaning</loc>
+    <lastmod>2025-10-22T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
