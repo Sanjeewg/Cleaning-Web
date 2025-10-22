@@ -37,6 +37,9 @@ export default function Document() {
         
         {/* Charset declaration */}
         <meta charSet="utf-8" />
+        
+        {/* Google Search Console Verification */}
+        <meta name="google-site-verification" content="_bsWzkjeglCVUsB_Qza-Q-68EUBCUvLYIJK0s-bezOg" />
       </Head>
       <body suppressHydrationWarning={true} className="font-sans">
         <Main />
